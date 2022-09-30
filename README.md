@@ -1,5 +1,36 @@
 # Getting Started with Create React App
 
+## project website and Repository
+https://graphtwitter.azurewebsites.net/
+https://github.com/rony171998/graphtwitter
+
+
+## How install React on Windows
+
+1. Install Node.js (https://nodejs.org/en/download/)
+2. Install Visual Studio Code
+3. Install Git
+
+## How to install Project
+
+1. Open Visual Studio Code
+2. Open Terminal
+3. Run command: `git clone (https://github.com/rony171998/graphtwitter.git)
+
+## How to run Project using terminal
+
+1. Run command: `npm install`
+3. Run command: `npm start`
+
+## How to get new Twitts with Tweepy
+
+1. Run command: `cd /src/components/Data/gettwitts`
+1. Run command: `pip install tweepy`
+2. Run command: `pip install json`
+3. edit file `/src/components/Data/gettwitts.py` on line 23 and add criteria to search twitts "q='criteria'"
+4. Run command: `python gettwitts.py`
+5. Run command: `npm start`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
