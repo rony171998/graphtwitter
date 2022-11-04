@@ -1,9 +1,10 @@
 # Getting Started with Create React App
 
-## project website and Repository
-https://graphtwitter.azurewebsites.net/
-https://github.com/rony171998/graphtwitter
+## project website 
+https://graph-tweets.netlify.app/
 
+## project Repository
+https://github.com/rony171998/graphtwitter
 
 ## How install React on Windows
 

@@ -7,9 +7,6 @@ import search from "../Data/search.json";
 
 const MainDash = () => {
 
-  useEffect(() => {
-    console.log(stast);
-  }, [stast]);
   return (
     <div className="MainDash">
       <h1 className="cloud">
