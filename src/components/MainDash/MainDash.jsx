@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Cards from "../Main/Cards/Cards";
 import Table from "../Main/Table/Table";
 import "./MainDash.css";
