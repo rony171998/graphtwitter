@@ -8,15 +8,17 @@
 }
 
 .Table {
-  max-height: 290px;
+  height: 30vh;
   overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 1rem;
   
 }
 
 .Table td,
 th {
   border: none !important;
-  
+  overflow-x: hidden;
 }
 
 .Table:first-child {
@@ -38,7 +40,6 @@ th {
     margin-top: 2rem;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .Table{

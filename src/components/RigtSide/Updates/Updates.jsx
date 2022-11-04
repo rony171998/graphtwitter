@@ -9,7 +9,7 @@ const Updates = () => {
         users.map((user) => {
           return (
             <div key={user.id} className="update">
-              <img src={user.user.profile_image_url} alt="profile" />
+              <img src={user.user.profile_image_url ?? "./no photo.jfif"} alt="profile" />
               <div className="noti">
                 <div  style={{marginBottom: '0.5rem'}}>
                   <span>{user.user.name}</span> <br />

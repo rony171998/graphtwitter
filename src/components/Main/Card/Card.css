@@ -80,17 +80,20 @@
 }
 
 .chartContainer {
-  width: 80%;
-  height: 80%;
-  
+  width: 95%;
+  height: 90%;
   padding: auto;
 }
 
 @media screen and (max-width: 1200px) {
   .ExpandedCard {
     top: 2rem;
-    height: 45vh;
+    width: 100%;
+    height: 100%;
     left: 6rem;
+  }
+  .chartContainer {
+    width: 90%;
   }
 }
 
@@ -102,6 +105,6 @@
     width: 100%;
   }
   .chartContainer {
-    width: 60%;
+    width: 90%;
   }
 }

@@ -113,7 +113,7 @@ function ExpandedCard({ param, setExpanded }) {
       <div className="chartContainer">
         <Chart options={data.options} xaxis={param.xaxis} series={param.series} type="area" />
       </div>
-      <span>Ultimo Mes</span>
+      <span>Ultimos Dias</span>
     </motion.div>
   );
 }

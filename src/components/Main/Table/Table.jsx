@@ -4,31 +4,51 @@ import { TableBody,Table ,Paper , TableCell, TableContainer, TableHead, TableRow
 import tweetts from "../../Data/tweets";
 
 export default function BasicTable() {
-  console.log(tweetts);
+  const formaterdate = (date) => {
+    const newDate = new Date(date);
+    const month = newDate.getMonth() + 1;
+    const day = newDate.getDate();
+    const hour = newDate.getHours();
+    const minutes = newDate.getMinutes();
+    const year = newDate.getFullYear();
+    return `${hour}:${minutes} ${day}/${month}/${year}`;
+    
+  };
 
   return (
-    <div className="Table mt-3">
-      <h3>Twitts</h3>
+    <div className="Table">
+      <h3>Tweets</h3>
       <TableContainer  component={Paper}>
-        <Table  sx={{ minWidth: 650 }} aria-label="simple table">
+        <Table  sx={{ minWidth: 650  }} aria-label="simple table">
           <TableHead>
             <TableRow>
+              <TableCell>#</TableCell>
               <TableCell>Fecha</TableCell>
               <TableCell>Usuario</TableCell>
               <TableCell>Twitt</TableCell>
+              <TableCell>Followers</TableCell>
+              <TableCell>Frients</TableCell>
+              <TableCell>Likes</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {tweetts.map((row) => (
+            {tweetts.map((tweet , index) => (
               <TableRow
-                key={row.id}
+                key={tweet.id}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
-                  {row.created_at}
+                  {index+1}
                 </TableCell>
-                <TableCell>{row.user.name}</TableCell>
-                <TableCell>{row.text}</TableCell>
+                <TableCell component="th" scope="row">
+                  {formaterdate(tweet.created_at)}
+                </TableCell>
+                <TableCell>{tweet.user.name}</TableCell>
+                <TableCell >{tweet.text}</TableCell>
+                <TableCell>{tweet.user.followers_count}</TableCell>
+                <TableCell>{tweet.user.friends_count}</TableCell>
+                <TableCell>{tweet.favorite_count}</TableCell>
+                
               </TableRow>
             ))}           
             

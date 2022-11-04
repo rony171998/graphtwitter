@@ -11,6 +11,11 @@
   --activeItem: #f799a354;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   /* padding: 0.5rem 3.5rem; */
   color: var(--black);
@@ -32,7 +37,7 @@
   background: var(--glass);
   border-radius: 2rem;
   gap: 16px;
-  grid-template-columns:auto 20rem ;
+  grid-template-columns:auto 25rem ;
   overflow: hidden;
 }
 
